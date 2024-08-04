@@ -1,0 +1,22 @@
+<!-- <button (click)="addProduct()">add product</button> -->
+<div class="container">
+    <div class="products">
+      <div *ngFor="let product of products; let i = index" class="product-item">
+  
+        <img
+          [src]="product.images[0]"
+          alt="{{ product.title }}"
+          class="product-photo"
+        />
+  
+        <div class="product-info">
+          <h3>{{ product.title }}</h3>
+          <p>Price: ${{ product.price }}</p>
+        </div>
+        <div class="delete" (click)="deleteProduct(i)">
+          <button>Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

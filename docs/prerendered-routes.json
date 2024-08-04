@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/about",
+    "/dashboard",
+    "/home",
+    "/login",
+    "/products"
+  ]
+}
